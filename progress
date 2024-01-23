@@ -1,0 +1,35 @@
+{1+⍨(@1)⍵}//+
+    { 1+(@1)⍵}
+{1-⍨(@1)⍵}//-
+    {¯1+(@1)⍵}
+{¯1⌽⍵}//>
+{ 1⌽⍵}//<
+/*for controll flow: code: # symbol, which means halt on reach;intut codetape="code,"#*/
+{⎕←⊃⍵⋄⍵}//.   print
+{⎕(@1)⍵}//,     read
+as abcdef
+
+//[:rotate right to ] if current is 0
+//]:rotate left to [ if current is not 0
+///[:-- ; ]:++, rotate until 0
+{(0,enclose W){asd}30k R 0}code
+asd:recursive
+asd exit condition: first of A> length of second of A
+asd recursion structure:(change A)nabla(change W)
+{if no outrun of codetape:{qwe}nabla{do taks of upper 6}}
+qwe:if task is atMost 6:++
+    else rotate
+    if w[s] is 0
+    instruction pointer+=currewntIP{0⍳⍨+\-⌿'[]'∘.=((⍺-1)↓⍵)}InstructionTape
+    to other direction be done: same but reverse,neg and"-="
+    {(0,enclose W){first of A!=tally 2nd of A:{qwe}nabla{abcdef}}30k R 0}
+    {(0,⊂ ⍵){(⊃⍺)≠≢2⊃⍺:{qwe}∇{abcdef}}30000⍴ 0}
+    {(0,⊂ {'+-<>.,[]'⍳⍵}⍵){(⊃⍺)≠≢2⊃⍺:({qwe}⍺)∇(((2⊃⍺)[⊃⍺]){abcdef}⍵)}30000⍴ 0}
+    
+    asd
+        take IP,IT  =>   new correct IP, IT unchanged
+        
+    qwe
+        take current task and tape =>mutated tape with one step
+        
+maybe preprocess IT for numbers
