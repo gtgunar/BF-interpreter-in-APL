@@ -20,16 +20,37 @@ asd recursion structure:(change A)nabla(change W)
 qwe:if task is atMost 6:++
     else rotate
     if w[s] is 0
-    instruction pointer+=currewntIP{0⍳⍨+\-⌿'[]'∘.=((⍺-1)↓⍵)}InstructionTape
+    instruction pointer+=currewntIP{⍺+0⍳⍨+\-⌿'[]'∘.=((⍺-1)↓⍵)}InstructionTape
     to other direction be done: same but reverse,neg and"-="
     {(0,enclose W){first of A!=tally 2nd of A:{qwe}nabla{abcdef}}30k R 0}
     {(0,⊂ ⍵){(⊃⍺)≠≢2⊃⍺:{qwe}∇{abcdef}}30000⍴ 0}
-    {(0,⊂ {'+-<>.,[]'⍳⍵}⍵){(⊃⍺)≠≢2⊃⍺:({qwe}⍺)∇(((2⊃⍺)[⊃⍺]){abcdef}⍵)}30000⍴ 0}
+    {(0,⊂ {'+-<>.,[]'⍳⍵}⍵){(⊃⍺)≠≢2⊃⍺:(((2⊃⍺)[⊃⍺]=0){qwe}⍺)∇(((2⊃⍺)[⊃⍺]){abcdef}⍵)}30000⍴ 0}
     
     asd
         take IP,IT  =>   new correct IP, IT unchanged
-        
-    qwe
+            if W1 is less than 7
+                increment W1, and pass on W2
+            else if 7
+                if A
+                W1+({0⍳⍨+\-⌿'[]'∘.=((⍺-1)↓⍵)}/W)
+                , and pass on W2
+            else if !A
+                W1-({0⍳⍨+\-⌿'[]'∘.=((⍺-1)↓⍵)}/W)
+    qwe     
         take current task and tape =>mutated tape with one step
         
 maybe preprocess IT for numbers
+
+
+7-5{⍺+0⍳⍨+\-⌿'[]'∘.=((⍺-1)↓⍵)}⌽
+
+
+
+
+{
+    {
+    (⊃⍺)≤≢2⊃⍺:
+        ∇(⍵[1] qwe* ⍵[2])    ,⍵[2]   ,asd ⍵[3]
+    }
+    0 ({'+-<>.,[]'⍳⍵}⍵) 30000 ⍴ 0
+}
