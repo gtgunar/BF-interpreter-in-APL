@@ -52,5 +52,5 @@ If it is true, it evaluates "⍺⌽⍨0⍳⍨+\-⌿7 8∘.=⍺". The first funct
 
 
 * It is actually a function that can take either 1 or 2 arguments. in it's 1 arguemnt form, it takes a whole number, and generates all the integers up to it (from 0 on 0 indexing 1 for 1 indexing).
-*differentiating concatenation and appending doesen't really make sense becaulse of rank polymorphism. Essentially, single values can be considered one element vectors, or even 1×1 matrices, or even higher order tensors, and vectors can be considered paralell collection of elements, so for example "1 2 3 + 2"=3 4 5.
+* Differentiating concatenation and appending doesen't really make sense becaulse of rank polymorphism. Essentially, single values can be considered one element vectors, or even 1×1 matrices, or even higher order tensors, and vectors can be considered paralell collection of elements, so for example "1 2 3 + 2"=3 4 5.
 * Outer product with concatenation is the Cartesian Product.
