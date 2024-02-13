@@ -1,6 +1,6 @@
 # Brainfuck-interpreter-in-APL
 
-This is an interpreter for the Brainfuck Programming language, written in APL. It is a function definition that takes the instzruction tape as function input and takes standard I/O as Runtime I/O.
+This is an interpreter for the Brainfuck Programming language, written in APL. It is a function definition that takes the Instruction Tape as function input and takes standard I/O as Runtime I/O.
 It is not a codegolfed version, but a more human readable one. 
 
 # How it Works
