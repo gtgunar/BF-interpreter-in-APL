@@ -69,3 +69,6 @@ Finally, since the cells are meant to be single byte, basicly being integers fro
 *  In this case with a 1 dimensional vector it does not make any difference, but using "/"( Reduce ) for the difference would have not worked. Also ⍀( Scan First ) exists as well.
 *  When looking at closing brackets ( 8 ) it finds 0, which denotes the element after the corresponding opening bracket. It works becaulse the Tape is rotated circularly, and the closing bracket gets the sum to start as negative 1.
 *  APL Permits and supports imperative code as well, some dialects even support OOP, and more conventional control flow macros. 
+
+By: Attila: Márton
+All Rights Reserved
