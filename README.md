@@ -71,4 +71,5 @@ Finally, since the cells are meant to be single byte, basicly being integers fro
 *  APL Permits and supports imperative code as well, some dialects even support OOP, and more conventional control flow macros. 
 
 By: Attila: Márton
+
 All Rights Reserved
